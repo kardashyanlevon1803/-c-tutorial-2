@@ -1,0 +1,240 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "libs",
+					"jsonFile" : "directory-libs-Debug-dd7a5ca29a7a50124f40.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs"
+				},
+				{
+					"build" : "apps",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-apps-Debug-12c899f314185723a34a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "apps"
+				},
+				{
+					"build" : "apps/lab01",
+					"childIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7
+					],
+					"jsonFile" : "directory-apps.lab01-Debug-c1795db8734b98c7e993.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "apps/lab01"
+				},
+				{
+					"build" : "apps/lab01/lab01_1",
+					"jsonFile" : "directory-apps.lab01.lab01_1-Debug-79124743e83d1bca5263.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 1,
+					"source" : "apps/lab01/lab01_1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "apps/lab01/lab01_2",
+					"jsonFile" : "directory-apps.lab01.lab01_2-Debug-cdf7e04e27be4e6496bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "apps/lab01/lab01_2",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "apps/lab01/lab01_3",
+					"jsonFile" : "directory-apps.lab01.lab01_3-Debug-411f8df2b61cf8150a49.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "apps/lab01/lab01_3",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "apps/lab01/lab01_4",
+					"jsonFile" : "directory-apps.lab01.lab01_4-Debug-e9a4dd79729c57fdcaea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "apps/lab01/lab01_4",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "c-tutorial-2"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "lab01_1",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "lab01_2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "lab01_3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "lab01_4",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "lab01_1::@637ce96995bd2768ce5a",
+					"jsonFile" : "target-lab01_1-Debug-2ab8a3f2ee8747255bfd.json",
+					"name" : "lab01_1",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "lab01_2::@ff87ca9be1f0cf9f49bc",
+					"jsonFile" : "target-lab01_2-Debug-0cda007386e35300fe96.json",
+					"name" : "lab01_2",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "lab01_3::@3da1e846a8acb160ef08",
+					"jsonFile" : "target-lab01_3-Debug-efe53ebd191738d5d781.json",
+					"name" : "lab01_3",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "lab01_4::@bbe97b5fe5524c269af3",
+					"jsonFile" : "target-lab01_4-Debug-f36e34e392b8bfe7904d.json",
+					"name" : "lab01_4",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/2510502/Documents/projects/\u0096c-tutorial-2/out/build/x64-debug",
+		"source" : "C:/Users/2510502/Documents/projects/\u0096c-tutorial-2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
