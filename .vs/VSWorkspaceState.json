@@ -1,13 +1,27 @@
 {
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-debug",
+      "out\\install\\x64-debug",
+      "out\\build\\x64-release",
+      "out\\install\\x64-release",
+      "out\\build\\x86-debug",
+      "out\\install\\x86-debug",
+      "out\\build\\x86-release",
+      "out\\install\\x86-release"
+    ]
+  },
   "ExpandedNodes": [
     "",
     "\\apps",
     "\\apps\\lab01",
     "\\apps\\lab01\\lab01_1",
     "\\apps\\lab01\\lab01_1\\include",
-    "\\apps\\lab01\\lab01_1\\src"
+    "\\apps\\lab01\\lab01_1\\src",
+    "\\apps\\lab02",
+    "\\apps\\lab02\\lab02_1",
+    "\\apps\\lab02\\lab02_1\\src"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
-  "PreviewInSolutionExplorer": false,
-  "OutputFoldersPerTargetSystem": {}
+  "SelectedNode": "\\apps\\lab01\\lab01_1",
+  "PreviewInSolutionExplorer": false
 }

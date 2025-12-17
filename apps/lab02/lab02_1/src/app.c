@@ -21,16 +21,13 @@ int main() {
     for (i = 0; i < K; i++) {
         x = a + i * h;
 
-        /* Точное значение */
         exact = -log(fabs(2.0 * sin(x / 2.0)));
 
-        /* Сумма ряда для заданного N */
         sumN = 0.0;
         for (n = 1; n <= N; n++) {
             sumN += cos(n * x) / n;
         }
 
-        /* Сумма ряда с точностью eps */
         sumEps = 0.0;
         n = 1;
         do {
