@@ -33,7 +33,7 @@ int main() {
         do {
             term = cos(n * x) / n;
             sumEps += term;
-            n++;
+            n++;    
         } while (fabs(term) >= EPS);
 
         printf("%8.4f\t%8.4f\t%8.4f\t%8.4f\n",
