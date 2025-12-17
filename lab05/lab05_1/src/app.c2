@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <math.h>
+
+double f(double x) {
+    return sqrt(x) - 2 * cos(M_PI * x / 2);
+}
+
+double df(double x) {
+    return 1.0 / (2 * sqrt(x)) + M_PI * sin(M_PI * x / 2);
+}
+
+double bisection(double a, double b, double e) {
+    double m;
+    while (fabs(b - a) > e) {
+        m = (a + b) / 2;
+        if (f(a) * f(m) <= 0) b = m;
+        else a = m;
+    }
+    return (a + b) / 2;
+}
+
+double iteration(double x0, double e) {
+    double x1;
+    do {
+        x1 = pow(2 * cos(M_PI * x0 / 2), 2);
+        if (x1 < 0) x1 = x0;
+        if (fabs(x1 - x0) < e) break;
+        x0 = x1;
+    } while (1);
+    return x1;
+}
+
+double chord(double a, double b, double e) {
+    double x;
+    do {
+        x = a - f(a) * (b - a) / (f(b) - f(a));
+        if (f(a) * f(x) < 0) b = x;
+        else a = x;
+    } while (fabs(f(x)) > e);
+    return x;
+}
+
+double newton(double x0, double e) {
+    double x1;
+    do {
+        x1 = x0 - f(x0) / df(x0);
+        if (fabs(x1 - x0) < e) break;
+        x0 = x1;
+    } while (1);
+    return x1;
+}
+
+double secant(double x0, double x1, double e) {
+    double x2;
+    do {
+        x2 = x1 - f(x1) * (x1 - x0) / (f(x1) - f(x0));
+        x0 = x1;
+        x1 = x2;
+    } while (fabs(f(x2)) > e);
+    return x2;
+}
+
+int main(void) {
+    double a = 0.1, b = 4.0, e = 1e-6;
+    printf("%.6f\n", bisection(a, b, e));
+    printf("%.6f\n", iteration(1.0, e));
+    printf("%.6f\n", chord(a, b, e));
+    printf("%.6f\n", newton(1.0, e));
+    printf("%.6f\n", secant(1.0, 1.5, e));
+    return 0;
+}
