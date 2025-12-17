@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    double a[n][m], b[n][m];
+
+    srand(time(NULL));
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            a[i][j] = (rand() % 21) - 10;
+            b[i][j] = a[i][j];
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            printf("%.2f ", a[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (i + j != 0) {
+                b[i][j] = a[i][j] * acos((double)i / (i + j));
+            }
+            printf("%.2f ", b[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+
+    for (int j = 0; j < m; j++) {
+        int p = 0, n1 = 0;
+        for (int i = 0; i < n; i++) {
+            if (b[i][j] > 0) p++;
+            if (b[i][j] < 0) n1++;
+        }
+        printf("%d %d\n", p, n1);
+    }
+
+    return 0;
+}
