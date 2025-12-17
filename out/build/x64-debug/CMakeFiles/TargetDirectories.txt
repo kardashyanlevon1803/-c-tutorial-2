@@ -9,12 +9,8 @@ C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab0
 C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_1/CMakeFiles/lab01_1.dir
 C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_1/CMakeFiles/edit_cache.dir
 C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_1/CMakeFiles/rebuild_cache.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_2/CMakeFiles/lab01_2.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_2/CMakeFiles/edit_cache.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_2/CMakeFiles/rebuild_cache.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_3/CMakeFiles/lab01_3.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_3/CMakeFiles/edit_cache.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_3/CMakeFiles/rebuild_cache.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_4/CMakeFiles/lab01_4.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_4/CMakeFiles/edit_cache.dir
-C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_4/CMakeFiles/rebuild_cache.dir
+C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab02/CMakeFiles/edit_cache.dir
+C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab02/CMakeFiles/rebuild_cache.dir
+C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab02/lab02_1/CMakeFiles/lab02_1.dir
+C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab02/lab02_1/CMakeFiles/edit_cache.dir
+C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab02/lab02_1/CMakeFiles/rebuild_cache.dir

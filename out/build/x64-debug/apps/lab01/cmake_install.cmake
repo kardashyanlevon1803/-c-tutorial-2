@@ -35,9 +35,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_1/cmake_install.cmake")
-  include("C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_2/cmake_install.cmake")
-  include("C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_3/cmake_install.cmake")
-  include("C:/Users/2510502/Documents/projects/c-tutorial-2/out/build/x64-debug/apps/lab01/lab01_4/cmake_install.cmake")
 
 endif()
 
