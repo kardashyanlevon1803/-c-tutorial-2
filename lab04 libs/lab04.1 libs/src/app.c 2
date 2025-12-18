@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void transform(double a[][10], int n, int m) {
+    int i, j;
+    for (j = 0; j < m; j++) {
+        int pos = 0, neg = 0;
+        for (i = 0; i < n; i++) {
+            a[i][j] = a[i][j] * acos((double)i / (i + j));
+            if (a[i][j] > 0) pos++;
+            else if (a[i][j] < 0) neg++;
+        }
+        printf("Column %d: +%d -%d\n", j, pos, neg);
+    }
+}
+
+int main() {
+    int n = 4, m = 5, i, j;
+    double a[10][10];
+
+    for (i = 0; i < n; i++)
+        for (j = 0; j < m; j++)
+            a[i][j] = rand() % 10 - 5;
+
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++)
+            printf("%6.2f ", a[i][j]);
+        printf("\n");
+    }
+
+    printf("\n");
+
+    transform(a, n, m);
+
+    printf("\n");
+
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++)
+            printf("%6.2f ", a[i][j]);
+        printf("\n");
+    }
+
+    return 0;
+}

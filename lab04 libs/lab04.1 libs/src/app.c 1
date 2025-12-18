@@ -1,0 +1,43 @@
+﻿#include <stdio.h>
+#include <stdlib.h>
+
+void balance(int a[], int n) {
+    int i, j, s1, s2, d, best = 1e9, p = 0;
+
+    for (i = 0; i < n - 1; i++) {
+        s1 = s2 = 0;
+        for (j = 0; j <= i; j++) s1 += a[j];
+        for (j = i + 1; j < n; j++) s2 += a[j];
+        d = abs(s1 - s2);
+        if (d < best) {
+            best = d;
+            p = i;
+        }
+    }
+
+    for (i = 0; i <= p; i++)
+        for (j = i + 1; j <= p; j++)
+            if (a[i] > a[j]) {
+                int t = a[i]; a[i] = a[j]; a[j] = t;
+            }
+
+    for (i = p + 1; i < n; i++)
+        for (j = i + 1; j < n; j++)
+            if (a[i] < a[j]) {
+                int t = a[i]; a[i] = a[j]; a[j] = t;
+            }
+}
+
+int main() {
+    int a[] = {4, 7, 2, 9, 1, 6};
+    int n = sizeof(a) / sizeof(a[0]);
+    int i;
+
+    for (i = 0; i < n; i++) printf("%d ", a[i]);
+    printf("\n");
+
+    balance(a, n);
+
+    for (i = 0; i < n; i++) printf("%d ", a[i]);
+    return 0;
+}

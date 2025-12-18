@@ -1,0 +1,1 @@
+int balance_array(int a[], int n);

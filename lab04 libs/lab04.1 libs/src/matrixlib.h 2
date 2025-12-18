@@ -1,0 +1,6 @@
+#ifndef MATRIXLIB_H
+#define MATRIXLIB_H
+
+int transform_matrix(double a[][10], int n, int m);
+
+#endif

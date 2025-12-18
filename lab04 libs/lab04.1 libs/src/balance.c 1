@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <limits.h>
+#include "balance.h"
+
+int balance_array(int a[], int n) {
+    int i, j, s1, s2, d, best = INT_MAX, p = 0;
+
+    for (i = 0; i < n - 1; i++) {
+        s1 = s2 = 0;
+        for (j = 0; j <= i; j++) s1 += a[j];
+        for (j = i + 1; j < n; j++) s2 += a[j];
+        d = abs(s1 - s2);
+        if (d < best) {
+            best = d;
+            p = i;
+        }
+    }
+
+    for (i = 0; i <= p; i++)
+        for (j = i + 1; j <= p; j++)
+            if (a[i] > a[j]) {
+                int t = a[i]; a[i] = a[j]; a[j] = t;
+            }
+
+    for (i = p + 1; i < n; i++)
+        for (j = i + 1; j < n; j++)
+            if (a[i] < a[j]) {
+                int t = a[i]; a[i] = a[j]; a[j] = t;
+            }
+
+    return p;
+}
